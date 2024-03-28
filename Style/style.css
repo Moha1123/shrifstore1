@@ -1,0 +1,71 @@
+body {
+    background-color: #8c8c8c; /* Gray background color */
+}
+
+input[type="radio"] {
+    /* Hide the default radio button style */
+    display: none;
+}
+
+.radio-container {
+    /* Style the container element that holds the radio buttons */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+input[type="radio"] + label {
+    /* Style the label element */
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+    border: 1px solid #000000; /* Add a black border around the label element */
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+input[type="radio"] + label span {
+    /* Style the label text */
+    margin-left: 10px;
+}
+
+input[type="radio"]:checked + label {
+    /* Customize the label element when the radio button is checked */
+    background-color: #008cff; /* Add a blue background color to the label element */
+}
+
+input[type="radio"]:focus + label {
+    /* Style the label element when the radio button is focused */
+    box-shadow: 0 0 5px 1px #008cff; /* Add a blue border around the label element when the radio button is focused */
+}
+
+input[type="radio"]:checked + label span {
+    /* Customize the label text when the radio button is checked */
+    color: #ffffff; /* Change the label text color to white */
+}
+
+input[type="radio"]:checked + label img {
+    /* Customize the image when the radio button is checked */
+    filter: brightness(150%); /* Add a brighter image effect when the radio button is checked */
+}
+
+.submit-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+input[type="submit"] {
+    background-color: #008cff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0066cc;
+}
